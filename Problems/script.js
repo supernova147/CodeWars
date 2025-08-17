@@ -24,6 +24,10 @@ function getAge(inputString){
 // Originally I had num.parseInt(); however that did not clearly work as parseInt() needs the string and/or the radix as its arguments.
 // I also incoporated substring to capture only the first character of that string since it always started with age.
 // I'll try another kata 8 problem & if it takes me less than 5, then I'll move up to a 7.
+console.log(getAge("5 years old"));
+console.log("-------------------------");
+
+
 
 /* Kata level 8
 When it's spring Japanese cherries blossom, it's called "sakura" and it's admired a lot. The petals start to fall in late April.
@@ -42,7 +46,7 @@ If the initial velocity is non-positive, the return value should be 0
 
 function sakuraFall(v) {
   let fallheight = 80*5; // I'll use this equation to calculate the time based off of 1 second.
-  console.log(fallheight); //so if the a sakura falls it takes 400 seconds for it to land on the ground @ 1cm/s..
+//   console.log(fallheight); //so if the a sakura falls it takes 400 seconds for it to land on the ground @ 1cm/s..
     if (v > 0){
         fallSpeed = 400/v; //therefore we input the time based off of one second & create the "easy" calc of 400/v
         return fallSpeed; //then we return it!
@@ -54,6 +58,8 @@ function sakuraFall(v) {
 //conditional statement to check whether the fall speed was a positive num. however, this does not take into account if the number
 // was entered as a string; so in that case, I would've used parseInt(v, 10); to convert the string value before checking if its
 // above a zero.
+console.log(sakuraFall(10));
+console.log("-------------------------");
 
 
 /* Kata level 8
@@ -104,6 +110,9 @@ Thoughts: It was straight forward. Could be refactored for sure. I saw what othe
 The hardest part was typing the conditional statements over and over.
 */
 
+console.log(switchItUp(9));
+console.log("-------------------------");
+
 /* kata level 8
 Write a function that returns the total surface area and volume of a box.
 
@@ -127,7 +136,8 @@ function getSize(width, height, depth) {
 //I forgot my equations. I had to google them.
 //other than that, it was essentially a math problem.
 //moving on to harder levels.
-
+console.log(getSize(10, 10, 10));
+console.log("-------------------------");
 
 /* Kata lvl 7
 Return the number (count) of vowels in the given string.
@@ -156,7 +166,8 @@ function getCount(str) {
 // each individual char; I had to change the order in which the check was done. even if it 'logically' seemed fit.
 // this problem did take me 15> minutes to solve; however, I learned more about loops & the includes() method.
 // will also note that if the str value did contain uppercase letters; I would need to use lowercase() method & then perform the check.
-
+console.log(getCount("one")); //should return 2
+console.log("-------------------------");
 
 /*
 Kata level 8
@@ -186,6 +197,9 @@ function opposite(number) {
 // AND THEN turn that string value into a number using parseInt. but no. I literally forgot basic math.
 // you just multiple the number with a negative number. & since all we're doing is keep the original value
 // we just multiple by -1. Took me more than 15 minutes to figure this all out.. :) 
+
+console.log(opposite(10000));
+console.log("-------------------------");
 
 /* Kata level 6
 Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
@@ -218,6 +232,9 @@ function countSmileys(arr) {
 //however, it didnt take me as long to set up the loop and create my check.
 //I'm proud of how I solved it. I did it quicker than I thought. Est: 5-10-ish minutes
 
+console.log(countSmileys([";)", ":)",":P"]));
+console.log("-------------------------");
+
 /* Kata level 6
 Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
@@ -243,3 +260,5 @@ function createPhoneNumber(numbers){
 // It does accomplish the task, however ugly this looks. Did take about 10-15 minutes for me to attempt with a for loop/map method 
 // & then attempting this idea.
 
+console.log(createPhoneNumber([5,6,1,2,4,6,1,2,3,0]));
+console.log("-------------------------");
